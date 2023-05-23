@@ -58,7 +58,7 @@ leaderboard.addEventListener("click", highScores);
 
 let i = 0;
 let score = 0;
-let time = 50;
+let time = 60;
 
 function startGame() {
   startSection.classList.add("hide");
