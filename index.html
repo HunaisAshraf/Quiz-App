@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Quiz</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="#" id="leaderboard"
+        >View Highscores <i class="fas fa-hand-point-left fa-lg"></i>
+      </a>
+      <p id="time">Time : 0</p>
+    </nav>
+    <section class="main">
+      <div class="container">
+        <div id="start" >
+          <h2 class="heading">Coding Quiz Challenge</h2>
+          <p>
+            Try to answer the following code-related questions within the time
+            limit.
+          </p>
+          <p>
+            Keep in mind that incorrect answers will penalize your score/time by
+            10 seconds.
+          </p>
+          <button id="start-btn" class="btn">Start Quiz</button>
+        </div>
+        <div id="question-container" class="hide">
+          <div id="questions">
+            <h2 id="question">Question</h2>
+          </div>
+          <div id="options" class="opt-btns">
+           
+          </div>
+          <p id="answer"></p>
+        </div>
+        <div id="final" class="hide">
+          <h2>All Done!</h2>
+          <p id="score"></p>
+          <form >
+            <label>Enter Name</label>
+            <input id="input" type="text" autocomplete="off">
+            <button class="btn" type="submit" onclick="saveScore()">Submit</button>
+          </form>
+        </div>
+        <div id="high-score"  class="hide">
+          <h2>Highscores</h2>
+
+          <div id="final-scores">
+
+          </div>
+
+          <button  class="btn" onclick="home()">Go Back</button>
+          <button class="btn" onclick="resetScore()">Clear Highscore</button>
+        </div>
+      </div>
+    </section>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
