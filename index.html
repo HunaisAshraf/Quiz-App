@@ -20,15 +20,15 @@
     </nav>
     <section class="main">
       <div class="container">
-        <div id="start" >
+        <div id="start">
           <h2 class="heading">Coding Quiz Challenge</h2>
           <p>
             Try to answer the following code-related questions within the time
             limit.
           </p>
           <p>
-            Keep in mind that incorrect answers will penalize your score/time by
-            10 seconds.
+            Keep in mind that <span>incorrect</span> answers will penalize your
+            score by <span>5 Points</span> and time by <span>10 seconds</span>.
           </p>
           <button id="start-btn" class="btn">Start Quiz</button>
         </div>
@@ -36,28 +36,26 @@
           <div id="questions">
             <h2 id="question">Question</h2>
           </div>
-          <div id="options" class="opt-btns">
-           
-          </div>
+          <div id="options" class="opt-btns"></div>
           <p id="answer"></p>
         </div>
         <div id="final" class="hide">
           <h2>All Done!</h2>
           <p id="score"></p>
-          <form >
+          <form>
             <label>Enter Name</label>
-            <input id="input" type="text" autocomplete="off">
-            <button class="btn" type="submit" onclick="saveScore()">Submit</button>
+            <input id="input" type="text" autocomplete="off" />
+            <button class="btn" type="submit" onclick="saveScore()">
+              Submit
+            </button>
           </form>
         </div>
-        <div id="high-score"  class="hide">
+        <div id="high-score" class="hide">
           <h2>Highscores</h2>
 
-          <div id="final-scores">
+          <div id="final-scores"></div>
 
-          </div>
-
-          <button  class="btn" onclick="home()">Go Back</button>
+          <button class="btn" onclick="home()">Go Back</button>
           <button class="btn" onclick="resetScore()">Clear Highscore</button>
         </div>
       </div>
